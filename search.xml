@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/11/09/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hexo + Next: A Sample Page Showcase</title>
+    <url>/2024/11/09/samples-references/</url>
+    <content><![CDATA[<p>This page is hidden until you click the ‘ Read More ‘ button.<br>在您按下「閱讀全文」內容按鈕前，此頁面已被隱藏。</p>
+<span id="more"></span>
+
+<!-- Cutdown -->
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>This is a sample page for showcasing diffirent functions of hexo posting.<br>You may link yourself to diffirent functions by the left sidebar.<br>Reference:<br><a href="https://zenreal.github.io/posts/44730/#">https://zenreal.github.io/posts/44730/#</a></p>
+<h1 id="Common-Functions"><a href="#Common-Functions" class="headerlink" title="Common Functions"></a>Common Functions</h1><!-- Cutdown -->
+<h2 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># This will be Header of Introduction.</span><br><span class="line">## This will be the second Header, which is the current &#x27;Header&#x27;.</span><br><span class="line">### This will be the third Header.</span><br></pre></td></tr></table></figure>
+<p>Header can link user to a specific location.</p>
+<!-- Cutdown -->
+<h2 id="How-to-display-a-Image"><a href="#How-to-display-a-Image" class="headerlink" title="How to display a Image"></a>How to display a Image</h2><p>To display a image, there are four ways.</p>
+<!-- Cutdown -->
+<h3 id="1-Using-center-to-locate-the-image-at-center"><a href="#1-Using-center-to-locate-the-image-at-center" class="headerlink" title="1: Using center to locate the image at center."></a>1: Using center to locate the image at center.</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;center&gt;</span><br><span class="line">&lt;img src=&quot;/images/sample_image.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;</span><br><span class="line">Center image</span><br><span class="line">&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+<center>
+<img src="/images/sample_image.jpg" width="50%" height="50%" />
+Center image with size control
+</center>
+
+<h3 id="2-Using-single-line-to-display-image"><a href="#2-Using-single-line-to-display-image" class="headerlink" title="2: Using single line to display image."></a>2: Using single line to display image.</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![Image Descrption](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg" alt="Image_by_link"></p>
+<center>
+Center image by single line . Put link/source to the right.
+</center>
+
+<h3 id="3-Using-Group-Pictures-to-put-mutiple-images"><a href="#3-Using-Group-Pictures-to-put-mutiple-images" class="headerlink" title="3: Using Group Pictures to put mutiple images."></a>3: Using Group Pictures to put mutiple images.</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% gp [1]-[1] %&#125;</span><br><span class="line">![image description](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg" alt="image description"></div></div></div>
+<center>
+A fully filled center image by GP , with 1 image and layout 1.
+</center>
+<br>
+
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% grouppicture 4-4 %&#125;</span><br><span class="line">![](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br><span class="line">![](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br><span class="line">![](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br><span class="line">![](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br><span class="line">&#123;% endgrouppicture %&#125;</span><br></pre></td></tr></table></figure>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg"></div><div class="group-picture-column"><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg"></div><div class="group-picture-column"><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg"></div></div></div>
+
+<center>
+A grouped center image by GP , with 4 images and layout 3.
+<br>
+For layout usages, check <a href="https://theme-next.js.org/docs/tag-plugins/group-pictures">https://theme-next.js.org/docs/tag-plugins/group-pictures</a>
+</center>
+
+<h3 id="4-Using-HTML-‘s-div-block-to-locate-the-image-on-left"><a href="#4-Using-HTML-‘s-div-block-to-locate-the-image-on-left" class="headerlink" title="4: Using HTML ‘s div block to locate the image on left."></a>4: Using HTML ‘s div block to locate the image on left.</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div style=&quot;display:inline-block;&quot;&gt;</span><br><span class="line">&lt;img width=&quot;100%&quot; style=&quot;float:left; margin-right: 10px;&quot; </span><br><span class="line">src=&quot;/images/sample_image.jpg&quot; alt=&quot;$fileName&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<div style="display:inline-block;"><img width="100%" style="float:left; margin-right: 10px;" src="/images/sample_image.jpg" alt="$fileName"></div>
+
+<h2 id="Linking-function"><a href="#Linking-function" class="headerlink" title="Linking function"></a>Linking function</h2><p>In default, link would be shown as normal text. ( Eg. <a href="https://ravennanma.github.io/">https://ravennanma.github.io/</a> )<br>But there are two common ways to show links.</p>
+<h3 id="1-First-method"><a href="#1-First-method" class="headerlink" title="1: First method"></a>1: First method</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Shown Text](https://yourlink.com)</span><br></pre></td></tr></table></figure>
+<p><a href="https://ravennanma.github.io/">For example: My Github</a></p>
+<h3 id="2-Second-method"><a href="#2-Second-method" class="headerlink" title="2: Second method"></a>2: Second method</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a href=&quot;https://ravennanma.github.io/&quot;&gt;https://ravennanma.github.io/&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<p><a href="https://ravennanma.github.io/">https://ravennanma.github.io/</a></p>
+<h2 id="Text-Styles"><a href="#Text-Styles" class="headerlink" title="Text Styles"></a>Text Styles</h2><p>This is a nomral text without styles.</p>
+<h3 id="Italic"><a href="#Italic" class="headerlink" title="Italic"></a><em>Italic</em></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*This will be Italic*</span><br></pre></td></tr></table></figure>
+
+<h3 id="Bold"><a href="#Bold" class="headerlink" title="Bold"></a><strong>Bold</strong></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">**This will be Bold**</span><br></pre></td></tr></table></figure>
+
+<h3 id="Bold-Italic"><a href="#Bold-Italic" class="headerlink" title="Bold Italic"></a><em><strong>Bold Italic</strong></em></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">***This will be Bold Italic**</span><br></pre></td></tr></table></figure>
+
+<h3 id="Deletion-line"><a href="#Deletion-line" class="headerlink" title="Deletion line"></a><del>Deletion line</del></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">~~This will be Deletion line~~</span><br></pre></td></tr></table></figure>
+
+<h3 id="Underline"><a href="#Underline" class="headerlink" title="Underline"></a><u>Underline</u></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;u&gt;This will be Underline&lt;/u&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Common-Text-functions"><a href="#Common-Text-functions" class="headerlink" title="Common Text functions"></a>Common Text functions</h2><p>These are some common functions when typing text.</p>
+<h3 id="Changing-font-colors"><a href="#Changing-font-colors" class="headerlink" title="Changing font colors"></a>Changing font colors</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;font color=#008080&gt;Color Teat has been shown.&lt;/font&gt;</span><br></pre></td></tr></table></figure>
+<p><font color=#008080>Color Teat has been shown.</font><br>You may find common colors at <a href="https://www.rapidtables.com/web/color/html-color-codes.html">here</a>.<br>Or use a online picker at <a href="https://htmlcolorcodes.com/color-picker/">here</a>.</p>
+<h2 id="Special-Line"><a href="#Special-Line" class="headerlink" title="Special Line"></a>Special Line</h2><p>There are diffirent reference line &#x2F; alert messages.</p>
+<h3 id="Reference-single-line"><a href="#Reference-single-line" class="headerlink" title="Reference single line"></a>Reference single line</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; This is a single Reference Line</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>This is a single Reference Line</p>
+</blockquote>
+<h3 id="Refrence-multiple-line"><a href="#Refrence-multiple-line" class="headerlink" title="Refrence multiple line"></a>Refrence multiple line</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; This is the first Reference Line</span><br><span class="line">&gt; This is the second Reference Line</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>This is the first Reference Line<br>This is the second Reference Line</p>
+</blockquote>
+<h3 id="Reference-multiple-stacking-line"><a href="#Reference-multiple-stacking-line" class="headerlink" title="Reference multiple stacking line"></a>Reference multiple stacking line</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt; This is the first Reference Line</span><br><span class="line">&gt;&gt; This is the second Reference Line</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>This is the first Reference Line</p>
+<blockquote>
+<p>This is the second Reference Line</p>
+</blockquote>
+</blockquote>
+<h3 id="Center-reference"><a href="#Center-reference" class="headerlink" title="Center reference"></a>Center reference</h3><!-- 文本居中引用效果 -->
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% cq %&#125;</span><br><span class="line">Center reference effect !</span><br><span class="line">&#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote class="blockquote-center">
+<p>Center reference effect !</p>
+
+</blockquote>
+
+<h3 id="Spliting-lines"><a href="#Spliting-lines" class="headerlink" title="Spliting lines"></a>Spliting lines</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">----</span><br><span class="line">This is spliting lines 1.</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line">This is spliting lines 2.</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>This is spliting lines 1.</p>
+<hr>
+<p>This is spliting lines 2.</p>
+<h2 id="List"><a href="#List" class="headerlink" title="List"></a>List</h2><h3 id="Dot-List"><a href="#Dot-List" class="headerlink" title="Dot List"></a>Dot List</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">+ Dot List 1</span><br><span class="line">+ Dot List 2</span><br><span class="line">    + Dot List 2.1</span><br><span class="line">        + Dot List 2.1.1</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Dot List 1</li>
+<li>Dot List 2<ul>
+<li>Dot List 2.1<ul>
+<li>Dot List 2.1.1</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Number-List"><a href="#Number-List" class="headerlink" title="Number List"></a>Number List</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">+ Dot List 1</span><br><span class="line">+ Dot List 2</span><br><span class="line">    + Dot List 2.1</span><br><span class="line">        + Dot List 2.1.1</span><br></pre></td></tr></table></figure>
+<ol>
+<li>Num List 1</li>
+<li>Num List 2<ol>
+<li>Num List 2.1<ol>
+<li>Num List 2.1.1</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="Checked-List"><a href="#Checked-List" class="headerlink" title="Checked List"></a>Checked List</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- [ ] Target 1</span><br><span class="line">- [x] Target 2</span><br><span class="line">- [x] Target 3</span><br><span class="line">- [ ] Target 4</span><br></pre></td></tr></table></figure>
+<ul>
+<li><input disabled="" type="checkbox"> Target 1</li>
+<li><input checked="" disabled="" type="checkbox"> Target 2</li>
+<li><input checked="" disabled="" type="checkbox"> Target 3</li>
+<li><input disabled="" type="checkbox"> Target 4</li>
+</ul>
+<h2 id="Form"><a href="#Form" class="headerlink" title="Form"></a>Form</h2><p>Form can be easily formed no matter the space is placed correctly or not.</p>
+<h3 id="Default-Form"><a href="#Default-Form" class="headerlink" title="Default Form"></a>Default Form</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| Column 1 | Column 2 | Column 3 |</span><br><span class="line">| -------- | -------- | -------- |</span><br><span class="line">| Text1    | Text2    | Text3    |</span><br><span class="line">| Text4    | Text5    | Text6    |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Column 1</th>
+<th>Column 2</th>
+<th>Column 3</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Text1</td>
+<td>Text2</td>
+<td>Text3</td>
+</tr>
+<tr>
+<td>Text4</td>
+<td>Text5</td>
+<td>Text6</td>
+</tr>
+</tbody></table>
+<h3 id="Center-version-Form"><a href="#Center-version-Form" class="headerlink" title="Center version Form"></a>Center version Form</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">| A | Center | Version |</span><br><span class="line">| :---: | :---: | :---: |</span><br><span class="line">| Text1    | Text2    | Text3    |</span><br><span class="line">| Text4    | Text5    | Text6    |</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th align="center">A</th>
+<th align="center">Center</th>
+<th align="center">Version</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Text1</td>
+<td align="center">Text2</td>
+<td align="center">Text3</td>
+</tr>
+<tr>
+<td align="center">Text4</td>
+<td align="center">Text5</td>
+<td align="center">Text6</td>
+</tr>
+</tbody></table>
+<h2 id="Common-Text-Funtions"><a href="#Common-Text-Funtions" class="headerlink" title="Common Text Funtions"></a>Common Text Funtions</h2><h3 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125; Default Content &#123;% endnote %&#125;</span><br><span class="line">&#123;% note primary %&#125; Primary Content &#123;% endnote %&#125;</span><br><span class="line">&#123;% note success %&#125; Success Content &#123;% endnote %&#125;</span><br><span class="line">&#123;% note info %&#125; Info Content &#123;% endnote %&#125;</span><br><span class="line">&#123;% note warning %&#125; Warning Content &#123;% endnote %&#125;</span><br><span class="line">&#123;% note danger %&#125; Danger Content &#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note default"><p>Default Content </p>
+</div>
+<div class="note primary"><p>Primary Content </p>
+</div>
+<div class="note success"><p>Success Content </p>
+</div>
+<div class="note info"><p>Info Content </p>
+</div>
+<div class="note warning"><p>Warning Content </p>
+</div>
+<div class="note danger"><p>Danger Content </p>
+</div>
+
+<h3 id="Labels"><a href="#Labels" class="headerlink" title="Labels"></a>Labels</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Label_1 </span><br><span class="line">&#123;% label primary@Label_2 %&#125; &#123;% label success@Label_3 %&#125; &#123;% label info@Label_4 %&#125;</span><br><span class="line">*&#123;% label warning @Label_5 %&#125;*  **&#123;% label danger@Label_6 %&#125;**  ~~&#123;% label default @Label_7 %&#125;~~</span><br><span class="line">&#123;% label @Label_8 %&#125;    &lt;mark&gt;Label_9&lt;/mark&gt;</span><br></pre></td></tr></table></figure>
+<p>Label_1 </p>
+<mark class="label primary">Label_2</mark> <mark class="label success">Label_3</mark> <mark class="label info">Label_4</mark>
+<p><em><mark class="label warning">Label_5</mark></em>  <strong><mark class="label danger">Label_6</mark></strong>  <del><mark class="label default">Label_7</mark></del></p>
+<mark class="label ">Label_8</mark>    <mark>Label_9</mark>
+
+
+<p>code base</p>
+<div style="code">Code</div>
+Here’s some inline code: `let x = 10;`.
+]]></content>
+      <categories>
+        <category>Website</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Sample</tag>
+      </tags>
+  </entry>
+</search>
