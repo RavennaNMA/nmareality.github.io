@@ -32,13 +32,13 @@
 <meta property="og:image" content="http://example.com/images/sample_image.jpg">
 <meta property="og:image" content="https://i.ibb.co/JkCKQFQ/sample-image.jpg">
 <meta property="og:image" content="https://i.ibb.co/JkCKQFQ/sample-image.jpg">
-<meta property="og:image" content="https://i.ibb.co/JkCKQFQ/sample-image.jpg">
-<meta property="og:image" content="https://i.ibb.co/JkCKQFQ/sample-image.jpg">
-<meta property="og:image" content="https://i.ibb.co/JkCKQFQ/sample-image.jpg">
-<meta property="og:image" content="https://i.ibb.co/JkCKQFQ/sample-image.jpg">
+<meta property="og:image" content="http://example.com/sample.jpg">
+<meta property="og:image" content="http://example.com/sample.jpg">
+<meta property="og:image" content="http://example.com/sample.jpg">
+<meta property="og:image" content="http://example.com/sample.jpg">
 <meta property="og:image" content="http://example.com/images/sample_image.jpg">
 <meta property="article:published_time" content="2024-11-09T07:55:34.000Z">
-<meta property="article:modified_time" content="2024-11-09T17:58:31.623Z">
+<meta property="article:modified_time" content="2024-11-09T19:05:36.032Z">
 <meta property="article:author" content="Ravenna">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Sample">
@@ -164,7 +164,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -268,7 +268,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-11-10 01:58:31" itemprop="dateModified" datetime="2024-11-10T01:58:31+08:00">2024-11-10</time>
+      <time title="Modified: 2024-11-10 03:05:36" itemprop="dateModified" datetime="2024-11-10T03:05:36+08:00">2024-11-10</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -320,8 +320,8 @@ A fully filled center image by GP , with 1 image and layout 1.
 <br>
 
 <hr>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% grouppicture 4-4 %&#125;</span><br><span class="line">![](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br><span class="line">![](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br><span class="line">![](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br><span class="line">![](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br><span class="line">&#123;% endgrouppicture %&#125;</span><br></pre></td></tr></table></figure>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg"></div><div class="group-picture-column"><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg"></div><div class="group-picture-column"><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg"></div></div></div>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% grouppicture 4-4 %&#125;</span><br><span class="line">![Sample_img](sample.jpg)</span><br><span class="line">![Sample_img](sample.jpg)</span><br><span class="line">![Sample_img](sample.jpg)</span><br><span class="line">![Sample_img](sample.jpg)</span><br><span class="line">&#123;% endgrouppicture %&#125;</span><br></pre></td></tr></table></figure>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/sample.jpg" alt="Sample_img"></div><div class="group-picture-column"><img src="/sample.jpg" alt="Sample_img"></div><div class="group-picture-column"><img src="/sample.jpg" alt="Sample_img"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/sample.jpg" alt="Sample_img"></div></div></div>
 
 <center>
 A grouped center image by GP , with 4 images and layout 3.
@@ -475,8 +475,46 @@ For layout usages, check <a target="_blank" rel="noopener" href="https://theme-n
 
 
 <p>code base</p>
-<div style="code">Code</div>
-Here’s some inline code: `let x = 10;`.
+<p>This is an inline code example: <code>let x = 10;</code></p>
+
+<div> Hightlight</div>
+<div class="highlight">Hightlight</div>
+
+<div class="highlight">
+<pre>
+<code>
+// This is a code block example
+function helloWorld() &#123;
+    console.log("Hello, World!");
+&#125;
+</code>
+</pre>
+</div>
+
+<video src="http://vis.zencdn.net/v/oceans.mp4" preload="metadata" controlslist="nodownload" controls playsinline poster=""></video>
+<br>
+<video src="/videos/sample.mp4" preload="metadata" controlslist="nodownload" controls playsinline poster=""></video>
+<br>
+<video poster="/images/sample_image.jpg" src="/videos/sample.mp4" style="max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">Your browser does not support the video tag.</video>
+<br>
+<video poster="/images/sample_image.jpg" src="https://media.w3.org/2010/05/sintel/trailer.mp4" style="max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">Your browser does not support the video tag.</video>
+<br>
+<blockquote><p>content</p>
+<footer><strong>[author[</strong><cite>source]] [link] [source_link_title]</cite></footer></blockquote>
+
+
+
+<iframe src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="[width]" height="[height]" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<blockquote><p>學而時習之，不亦悅乎。</p>
+<footer><strong>孔子</strong><cite>&nbsp;- 論語</cite></footer></blockquote>
+
+<blockquote><p>我一本書會讀 3 次，第一次先略讀，重點在先大概知道這本書的架構；第二次會精讀，重點在理解；第三次會實際實作，驗證書中內容，並整理至 Blog，算是消化成自己的東西，以後就只需查自己的 Blog 即可。</p>
+<footer><strong>@oomusou</strong><cite><a target="_blank" rel="noopener" href="https://twitter.com/oomusou/status/636320431549497344">twitter.com/oomusou/status/636320431549497344</a></cite></footer></blockquote>
+
+<blockquote><p>念念不忘，必有迴響。有一口氣，點一盞燈，有燈就有人。</p>
+<footer><strong>一代宗師</strong><cite><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%B8%80%E4%BB%A3%E5%AE%97%E5%B8%AB">維基百科</a></cite></footer></blockquote>
+
 
     </div>
 
@@ -499,6 +537,9 @@ Here’s some inline code: `let x = 10;`.
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2024/11/10/test/" rel="next" title="test">
+                  test <i class="fa fa-angle-right"></i>
+                </a>
             </div>
           </div>
     </footer>

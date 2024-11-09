@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2024/11/09/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>test</title>
+    <url>/2024/11/10/test/</url>
+    <content><![CDATA[<p><img src="/sample.jpg" alt="Sample_img"><br><img src="/sample.jpg" alt="test"></p>
 ]]></content>
   </entry>
   <entry>
@@ -52,8 +40,8 @@ A fully filled center image by GP , with 1 image and layout 1.
 <br>
 
 <hr>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% grouppicture 4-4 %&#125;</span><br><span class="line">![](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br><span class="line">![](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br><span class="line">![](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br><span class="line">![](https://i.ibb.co/JkCKQFQ/sample-image.jpg)</span><br><span class="line">&#123;% endgrouppicture %&#125;</span><br></pre></td></tr></table></figure>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg"></div><div class="group-picture-column"><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg"></div><div class="group-picture-column"><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="https://i.ibb.co/JkCKQFQ/sample-image.jpg"></div></div></div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% grouppicture 4-4 %&#125;</span><br><span class="line">![Sample_img](sample.jpg)</span><br><span class="line">![Sample_img](sample.jpg)</span><br><span class="line">![Sample_img](sample.jpg)</span><br><span class="line">![Sample_img](sample.jpg)</span><br><span class="line">&#123;% endgrouppicture %&#125;</span><br></pre></td></tr></table></figure>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/sample.jpg" alt="Sample_img"></div><div class="group-picture-column"><img src="/sample.jpg" alt="Sample_img"></div><div class="group-picture-column"><img src="/sample.jpg" alt="Sample_img"></div></div><div class="group-picture-row"><div class="group-picture-column"><img src="/sample.jpg" alt="Sample_img"></div></div></div>
 
 <center>
 A grouped center image by GP , with 4 images and layout 3.
@@ -207,8 +195,46 @@ For layout usages, check <a href="https://theme-next.js.org/docs/tag-plugins/gro
 
 
 <p>code base</p>
-<div style="code">Code</div>
-Here’s some inline code: `let x = 10;`.
+<p>This is an inline code example: <code>let x = 10;</code></p>
+
+<div> Hightlight</div>
+<div class="highlight">Hightlight</div>
+
+<div class="highlight">
+<pre>
+<code>
+// This is a code block example
+function helloWorld() &#123;
+    console.log("Hello, World!");
+&#125;
+</code>
+</pre>
+</div>
+
+<video src="http://vis.zencdn.net/v/oceans.mp4" preload="metadata" controlslist="nodownload" controls playsinline poster=""></video>
+<br>
+<video src="/videos/sample.mp4" preload="metadata" controlslist="nodownload" controls playsinline poster=""></video>
+<br>
+<video poster="/images/sample_image.jpg" src="/videos/sample.mp4" style="max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">Your browser does not support the video tag.</video>
+<br>
+<video poster="/images/sample_image.jpg" src="https://media.w3.org/2010/05/sintel/trailer.mp4" style="max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">Your browser does not support the video tag.</video>
+<br>
+<blockquote><p>content</p>
+<footer><strong>[author[</strong><cite>source]] [link] [source_link_title]</cite></footer></blockquote>
+
+
+
+<iframe src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="[width]" height="[height]" frameborder="0" loading="lazy" allowfullscreen></iframe>
+
+<blockquote><p>學而時習之，不亦悅乎。</p>
+<footer><strong>孔子</strong><cite>&nbsp;- 論語</cite></footer></blockquote>
+
+<blockquote><p>我一本書會讀 3 次，第一次先略讀，重點在先大概知道這本書的架構；第二次會精讀，重點在理解；第三次會實際實作，驗證書中內容，並整理至 Blog，算是消化成自己的東西，以後就只需查自己的 Blog 即可。</p>
+<footer><strong>@oomusou</strong><cite><a href="https://twitter.com/oomusou/status/636320431549497344">twitter.com/oomusou/status/636320431549497344</a></cite></footer></blockquote>
+
+<blockquote><p>念念不忘，必有迴響。有一口氣，點一盞燈，有燈就有人。</p>
+<footer><strong>一代宗師</strong><cite><a href="https://zh.wikipedia.org/wiki/%E4%B8%80%E4%BB%A3%E5%AE%97%E5%B8%AB">維基百科</a></cite></footer></blockquote>
+
 ]]></content>
       <categories>
         <category>Website</category>
@@ -217,5 +243,23 @@ Here’s some inline code: `let x = 10;`.
         <tag>Hexo</tag>
         <tag>Sample</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/11/09/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
 </search>
