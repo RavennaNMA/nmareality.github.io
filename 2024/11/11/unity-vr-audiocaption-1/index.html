@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><!-- hexo injector head_begin start -->
+<link rel="stylesheet" href="/css/bilicard.css">
+<!-- hexo injector head_begin end -->
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
@@ -22,25 +24,32 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"ravennanma.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Categories">
-<meta property="og:url" content="https://ravennanma.github.io/categories/index.html">
+    <meta name="description" content="A Simple Tutorial of VR Audiomanager &amp; Caption System.   This page is hidden until you click the ‘ Read More ‘ button.在您按下「閱讀全文」內容按鈕前，此頁面已被隱藏。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Unity + Oculus OVR : AudioManager &amp; Caption System">
+<meta property="og:url" content="https://ravennanma.github.io/2024/11/11/unity-vr-audiocaption-1/index.html">
 <meta property="og:site_name" content="Ravenna">
+<meta property="og:description" content="A Simple Tutorial of VR Audiomanager &amp; Caption System.   This page is hidden until you click the ‘ Read More ‘ button.在您按下「閱讀全文」內容按鈕前，此頁面已被隱藏。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-11-09T07:36:58.000Z">
-<meta property="article:modified_time" content="2024-11-09T07:37:52.203Z">
+<meta property="article:published_time" content="2024-11-11T06:53:50.000Z">
+<meta property="article:modified_time" content="2024-11-11T07:30:47.093Z">
 <meta property="article:author" content="Ravenna">
+<meta property="article:tag" content="Unity">
+<meta property="article:tag" content="OVR">
+<meta property="article:tag" content="VR">
+<meta property="article:tag" content="System">
+<meta property="article:tag" content="Audio">
+<meta property="article:tag" content="Captions">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://ravennanma.github.io/categories/">
+<link rel="canonical" href="https://ravennanma.github.io/2024/11/11/unity-vr-audiocaption-1/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"https://ravennanma.github.io/categories/index.html","path":"categories/index.html","title":"Categories"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://ravennanma.github.io/2024/11/11/unity-vr-audiocaption-1/","path":"2024/11/11/unity-vr-audiocaption-1/","title":"Unity + Oculus OVR : AudioManager & Caption System"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Categories | Ravenna
-</title>
+<title>Unity + Oculus OVR : AudioManager & Caption System | Ravenna</title>
   
 
 
@@ -132,7 +141,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -145,6 +154,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Getting-Started"><span class="nav-number">2.</span> <span class="nav-text">Getting Started</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What-do-I-need"><span class="nav-number">2.1.</span> <span class="nav-text">What do I need?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Why-do-I-need"><span class="nav-number">2.2.</span> <span class="nav-text">Why do I need?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-make-it-work"><span class="nav-number">2.3.</span> <span class="nav-text">How to make it work?</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -229,42 +239,155 @@
 
     </div>
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
 
 
-    
-    
-    
-    <div class="post-block" lang="en"><header class="post-header">
+  
 
-<h1 class="post-title" itemprop="name headline">Categories
-</h1>
 
-<div class="post-meta-container">
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://ravennanma.github.io/2024/11/11/unity-vr-audiocaption-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Ravenna">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ravenna">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Unity + Oculus OVR : AudioManager & Caption System | Ravenna">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Unity + Oculus OVR : AudioManager & Caption System
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2024-11-11 14:53:50 / Modified: 15:30:47" itemprop="dateCreated datePublished" datetime="2024-11-11T14:53:50+08:00">2024-11-11</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Unity/" itemprop="url" rel="index"><span itemprop="name">Unity</span></a>
+        </span>
+    </span>
+
+  
 </div>
 
-</header>
+        </div>
+      </header>
 
-      
-      
-      
-      <div class="post-body"><div class="category-all-page">
-  <div class="category-all-title">
-    3 categories in total
-  </div>
-  <div class="category-all">
-    <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Collections/">Collections</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Unity/">Unity</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Website/">Website</a><span class="category-list-count">1</span></li></ul>
-  </div>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><div class="note info"><p>A Simple Tutorial of VR Audiomanager &amp; Caption System. </p>
 </div>
+<p>This page is hidden until you click the ‘ Read More ‘ button.<br>在您按下「閱讀全文」內容按鈕前，此頁面已被隱藏。</p>
+<span id="more"></span>
 
-      </div>
-      
-      
-      
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Inspired by Oculus Whisper , a open-source Oculus Game , which has a audio manager &amp; caption system.<br>I created this blog to organize the functions of it.</p>
+<p>There is lack of tutorial on how to use or create such a system in VR game development.<br>Especially when we need a narrator , and a clean script for our vr game.<br>In this tutorial , we will mainly discuss on how to use and edit it, but not start from 0.</p>
+<h1 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h1><p>Normally, I will ask myself these questions before I do anything.</p>
+<h2 id="What-do-I-need"><a href="#What-do-I-need" class="headerlink" title="What do I need?"></a>What do I need?</h2><ul>
+<li>I need a Captions System which works in VR.</li>
+<li>I need a Audio Manager that can store audio somewhere ,but not changing the script if I modiify something.</li>
+</ul>
+<h2 id="Why-do-I-need"><a href="#Why-do-I-need" class="headerlink" title="Why do I need?"></a>Why do I need?</h2><ul>
+<li>I am not a expert or knowing how to code it from 0.<ul>
+<li>I need less time but a good result.<ul>
+<li>I want efficiency.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="How-to-make-it-work"><a href="#How-to-make-it-work" class="headerlink" title="How to make it work?"></a>How to make it work?</h2><ul>
+<li>Try Things-already-happened , it could be sample, open-source, demo.<ul>
+<li>Take what you want from your needs.<ul>
+<li>Make a little test it in your project.<ul>
+<li>Modify it due to your needs.<ul>
+<li>Minify it and make it a package to use afterwards.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
     </div>
 
     
     
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Ravenna
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://ravennanma.github.io/2024/11/11/unity-vr-audiocaption-1/" title="Unity + Oculus OVR : AudioManager &amp; Caption System">https://ravennanma.github.io/2024/11/11/unity-vr-audiocaption-1/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Unity/" rel="tag"># Unity</a>
+              <a href="/tags/OVR/" rel="tag"># OVR</a>
+              <a href="/tags/VR/" rel="tag"># VR</a>
+              <a href="/tags/System/" rel="tag"># System</a>
+              <a href="/tags/Audio/" rel="tag"># Audio</a>
+              <a href="/tags/Captions/" rel="tag"># Captions</a>
+          </div>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/11/10/submission-oppotunity-01/" rel="prev" title="Collections: Submission + Opportunity of Interest / Art / Rewards">
+                  <i class="fa fa-angle-left"></i> Collections: Submission + Opportunity of Interest / Art / Rewards
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
 
 
 </div>
@@ -280,11 +403,11 @@
     </label>
     <select class="lang-select" data-canonical="" aria-label="Select language">
       
-        <option value="en" data-href="/categories/index.html" selected="">
+        <option value="en" data-href="/2024/11/11/unity-vr-audiocaption-1/" selected="">
           English
         </option>
       
-        <option value="zh-TW" data-href="/zh-TW/categories/index.html" selected="">
+        <option value="zh-TW" data-href="/zh-TW/2024/11/11/unity-vr-audiocaption-1/" selected="">
           繁體中文
         </option>
       
