@@ -404,4 +404,37 @@ For layout usages, check <a href="https://theme-next.js.org/docs/tag-plugins/gro
         <tag>Captions</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Tools: Line and Color Imitation Training</title>
+    <url>/2024/11/12/tools-processing-linecolorgenerate/</url>
+    <content><![CDATA[<div class="note info"><p>Original Tool for generating Digital Art Practice. </p>
+</div>
+<p>This page is hidden until you click the ‘ Read More ‘ button.<br>在您按下「閱讀全文」內容按鈕前，此頁面已被隱藏。</p>
+<span id="more"></span>
+
+<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>基於 Victor-Cloux (V大) 預科作业3.0<br>電繪中，線條和色彩臨摹 的訓練。<br>這是一個 線條和色彩臨摹 的訓練圖生成器。</p>
+<p>Based on Victor-Cloux (V大) Matriculation 3.0<br>Line and Color Imitation Training in Digital Art.<br>This is a Line and Color Imitation Training Images Generator.</p>
+<h1 id="How-to-use"><a href="#How-to-use" class="headerlink" title="How to use?"></a>How to use?</h1><ol>
+<li>Download the zip file from the link.<br>從連結下載壓縮檔。</li>
+<li>Unzip the zip file.<br>解壓縮。</li>
+<li>Open the Art_Practice_Generate Folder.<br>開啟 Art_Practice_Generate 資料夾。</li>
+<li>Double click to run each .exe according to the order from 1 to 4.<br>按照 1 到 4 的順序，雙擊執行每個 .exe。</li>
+<li>For 4_Color.exe , You can change colors by Right Clicking the screen. 對於 4_Color.exe ,<br>您可以用滑鼠右鍵按下螢幕來改變顏色。</li>
+<li>Save the image by clicking the right top button.<br>按一下右上方的按鈕，儲存影像。</li>
+<li>You will get 1 Line Practice &amp; 1 Color Practice with Date !<br>您將獲得 1 份線條練習和 1 份色彩練習，附有日期！</li>
+</ol>
+<h1 id="Download-Link"><a href="#Download-Link" class="headerlink" title="Download Link"></a>Download Link</h1><h2 id="File-io"><a href="#File-io" class="headerlink" title="File.io"></a>File.io</h2><p> <a href="https://file.io/a79uSvU6T3Vs">File.io</a></p>
+<h2 id="Google-Drive"><a href="#Google-Drive" class="headerlink" title="Google Drive"></a>Google Drive</h2><p> <a href="https://drive.google.com/file/d/1ZWQHz4W9Q1NjxFNnnX5Zcd5qlRbsOEDW/view?usp=sharing">Google Drive</a></p>
+]]></content>
+      <categories>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>Training</tag>
+        <tag>Imitation</tag>
+        <tag>Digital Art</tag>
+        <tag>Generator</tag>
+        <tag>Processing</tag>
+      </tags>
+  </entry>
 </search>
